@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(#181818, #535dcc);
+    padding: 16px 0;
+    color: #fff;
+}
+
+nav {
+    background-image: url(./img/estrelas.gif);
+    padding: 16px 0;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .container,
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container{
+    align-items: flex-start;
+}
+
+section{
+    padding: 24px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+}
+
+section{
+    color: #182C61;
+}
+
+section p{
+    margin-bottom: 8px;
+}
+
+.store{
+    margin-right: 32px;
+}
+
+#contato .container{
+    display: block;
+}
+
+.contact-metods{
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom:  8px;
+    padding: 8px;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+form button{
+    background-color: #182C61;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer{
+    background-image: url(./img/estrelas.gif);
+    color: #fff;
+    padding: 16px 0;
+    text-align: center;
+}
+
+#produtos > h2 {
+    padding-bottom: 35px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    column-gap: 1%;
+}
+
+.produto img {
+    max-width: 100%;  
+    transition: 1s all ease-in-out;
+}
+.produtos article label,
+article h2 {
+    color: #03C203;
+}
+
+article button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #d6e0ea;
+    color: #000;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+    }
+
+    header h1 {
+        margin-bottom: 32px;
+    }
+
+    #about {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about img {
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 24px;
+    }
+
+    .sobreAloja {
+        display: block;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .sobreAloja p {
+        width: 100%;
+        margin-left: 0;
+        text-align: justify;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+        max-width: 80%;
+    }
+    
+    #about{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about img {
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 24px;
+    }
+
+    .sobreAloja {
+        display: block;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .sobreAloja p {
+        width: 100%;
+        margin-left: 0;
+        text-align: justify;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
